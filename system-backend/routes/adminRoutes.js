@@ -35,7 +35,7 @@ router.post("/", registerUser);
 
 router.post("/login", loginUser);
 
-router.post("/validate", protect, validateUser);
+router.post("/validate", validateUser);
 
 router.put("/", updateUser);
 
