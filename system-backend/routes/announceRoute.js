@@ -13,12 +13,12 @@ const router = express.Router();
 
 //routes announcement student and admin
 
-router.get("/", protect, getAnnounce);
+router.get("/", getAnnounce);
 
 router.get("/checkpost", checkPost);
 
-router.post("/", protect, postAnnounce);
+router.post("/", postAnnounce);
 
-router.put("/", protect, updateAnnounce);
+router.put("/", updateAnnounce);
 
 export default router;

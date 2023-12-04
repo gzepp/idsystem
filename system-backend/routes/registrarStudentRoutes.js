@@ -9,10 +9,10 @@ import {
 
 const router = express.Router();
 
-router.get("/", protect, getAllReq);
+router.get("/", getAllReq);
 
-router.post("/", protect, registerQrReq);
+router.post("/", registerQrReq);
 
-router.put("/", protect, updateQrReq);
+router.put("/", updateQrReq);
 
 export default router;

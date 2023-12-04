@@ -12,10 +12,10 @@ const router = express.Router();
 
 //routes admin ,student and guardS
 
-router.get("/", protect, getEntry);
+router.get("/", getEntry);
 
-router.get("/myentry", protect, getMyentry);
+router.get("/myentry", getMyentry);
 
-router.post("/", protect, recordEntries);
+router.post("/", recordEntries);
 
 export default router;

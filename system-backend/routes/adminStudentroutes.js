@@ -20,11 +20,11 @@ const router = express.Router();
 
 //routes students and admin
 
-router.get("/", protect, getStudents);
+router.get("/", getStudents);
 
 router.get("/userExist", checkProfile);
 
-router.post("/", protect, createStudent);
+router.post("/", createStudent);
 
 router.post("/requestotp", requestOtp);
 
@@ -34,8 +34,8 @@ router.post("/checkstudent", checkStudent);
 
 router.post("/resetpass", updateStudentPassword);
 
-router.post("/batchreg", protect, upload.single("file"), batchRegisterStudents);
+router.post("/batchreg", upload.single("file"), batchRegisterStudents);
 
-router.put("/", protect, updateStudent);
+router.put("/", updateStudent);
 
 export default router;

@@ -19,24 +19,24 @@ const router = express.Router();
 
 //routes for admin and guard
 
-router.get("/", protect, getUserlist);
+router.get("/", getUserlist);
 
-router.get("/getentryRdata", protect, getEntryRdata);
+router.get("/getentryRdata", getEntryRdata);
 
-router.get("/getstaffqrRdata", protect, getStaffQrData);
+router.get("/getstaffqrRdata", getStaffQrData);
 
-router.get("/getdata", protect, getData);
+router.get("/getdata", getData);
 
-router.get("/getbardata", protect, getBarData);
+router.get("/getbardata", getBarData);
 
-router.post("/me", protect, getProfile);
+router.post("/me", getProfile);
 
-router.post("/", protect, registerUser);
+router.post("/", registerUser);
 
 router.post("/login", loginUser);
 
 router.post("/validate", protect, validateUser);
 
-router.put("/", protect, updateUser);
+router.put("/", updateUser);
 
 export default router;
