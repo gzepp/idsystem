@@ -43,7 +43,7 @@ const server = http.createServer(app);
 //Allowing Cor for all routess
 const io = new Server(server, {
   cors: {
-    origin: "https://shams-uniid.web.app", // Replace with your client's origin
+    origin: "https://shots.slarenasitsolutions.com/", // Replace with your client's origin
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   },
