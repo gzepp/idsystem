@@ -1,0 +1,267 @@
+/* Locally Imported Fonts */
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../../../components/fonts/Roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../../../components/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../../../components/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../../../components/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+
+/* Main Container */
+.eventlist-main-body{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    width:450px;
+}
+
+.eventlist-container{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid #00000033;
+}
+
+/* eventlist Header */
+.eventlist-header{
+    display: flex;
+    border-bottom: #00000033 solid 1px;    
+    align-items: center;
+}
+
+.eventlist-header-det{
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.eventlist-header-icon{
+    margin: 0px;
+}
+.eventlist-header-icon i{
+    font-size: 28px;
+    color: #404040;
+    margin: 1px 15px 0 0;
+}
+
+.eventlist-header-text{
+    font-size: 20px;
+    font-family: "Roboto-Bold";
+    color: #404040;
+
+}
+
+/* Search Bar */
+.eventlist-search{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.eventlist-search i{
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    padding: 9px 10px;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #404040;
+    margin-left:15px;
+}
+.eventlist-searchbar-container{
+    display:flex;
+    align-items: center;
+    width: 100%;
+}
+
+.anno-search-bar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.anno-search-bar input{
+    font-size: 14px;
+    font-family: "Roboto-Regular";
+    color: #404040;
+    border: none;
+    background-color: #EFEFEF;
+    padding: 7px 15px;
+    margin: 10px 15px 10px 0px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    border-radius: 0px 5px 5px 0px;
+}
+
+.anno-search-bar input:focus{
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+/* Subheader General CSS */
+.category-container, .announcement-list-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.eventlist-subheader{
+    font-size: 14px;
+    font-family: "Roboto-Medium";
+    color: #404040;
+    background-color: #F0F0F0;
+    padding: 10px 15px;
+    border-bottom: #00000033 solid 1px;    
+    border-top: #00000033 solid 1px;    
+}
+
+/* Categories Container */
+.anno-linking-page{
+text-decoration: none;
+}
+
+
+
+.category-links{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px 0px;
+}
+
+.category-links-det{
+    font-size: 12px;
+    font-family: "Roboto-Regular";
+    color: #404040;
+    padding: 5px 20px;
+}
+
+.category-links-det:hover{
+    cursor: pointer;
+    color: #47B8B2;
+}
+
+/* Announcement List */
+.eventlist-links-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.eventlist-title-card-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    border: #00000033 solid 1px;
+    
+}
+
+.eventlist-title-card-1:hover{
+    cursor: pointer;
+    border: #47B8B2 solid 1px;
+}
+
+.react-detail-indicator{
+    display: flex;
+    height:40px;
+    width: 5px;
+    background-color: #47B8B2;
+    border-radius: 5px;
+    margin: 0px 5px;
+}
+
+.eventlist-details{
+    display: flex;
+    flex-direction: column;
+    margin-left:20px;
+    justify-content: center;
+    width: auto;
+}
+
+.eventlist-title{
+    display: flex;
+    font-family: "Roboto-Bold";
+    font-size: 20px;
+    color: #181818;
+}
+
+.event-det-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color: #181818;
+    border: 1px solid #F8B30D;
+    width: 85px;
+    height: 85px;
+  }
+  
+  .month-event {
+    font-family: "Roboto-Light";
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #181818;
+  }
+  
+  .day-event {
+    font-family: "Roboto-Bold";
+    font-size: 24px;
+    color: #181818;
+  }
+  
+
+
+
+.anno-data-not-found{
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto-Medium";
+    font-size: 12px;
+    padding: 10px;
+    color: #404040;
+}
+
+
+/* Bottom */
+.eventlist-bottom{
+    background-color: #F0F0F0;
+    padding: 15px 10px;
+    border-top: #00000033 solid 1px;
+    border-radius: 0px 0px 5px 5px;    
+}
+
+.anno-pagination{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+}
+
+.anno-search-prev{
+    color: #47B8B2;
+    cursor: pointer;
+}
+
+.anno-search-next{
+    color: #47B8B2;
+    cursor:pointer;
+}

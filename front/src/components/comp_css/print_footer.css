@@ -1,0 +1,67 @@
+/*Locally Imported Fonts*/
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight:bold;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+
+
+.footer-body-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+}
+
+.footer-text{
+    font-family: 'Roboto-Regular';
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px ;
+}
+
+.footer-text .footer-email-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text .footer-contact-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    border-top: 1px solid #3f3f3f; 
+    padding-top: 10px;
+    margin-top: 15px 0px 10px 0px;
+}

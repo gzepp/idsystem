@@ -1,0 +1,635 @@
+/* Locally Imported Fonts */
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../../../components/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../../../components/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../../../components/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'SSPro-Bold';
+    src: url('../../../components/fonts/source-sans-pro/SourceSansPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+
+/* User Main Container */
+
+.user-body-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    overflow-x: hidden;
+}
+
+/* User Contents */
+
+.user-main-contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+}
+.user-body-limiter {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 30px;
+    height: 100%;
+    width:1440px;
+}
+
+.user-records-contents{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.lower-topbar-wrapper{
+    display: flex;
+    justify-content: center;
+    background-color: #47B8B2;
+
+}
+
+.lower-topbar{
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 35px;
+    height: 100%;
+    width:1440px;
+}
+
+.lower-topbar-text{
+    padding: 0px 5px;
+}
+
+.top-linking-page{
+    text-decoration: none;
+}
+
+.active-linking{
+    color: #ffff;
+}
+
+.active-linking:hover{
+    color: #ffce74;
+}
+
+/* User user-side Profile */
+.student-side-profile-body{
+    display: flex;
+    flex-direction: column;
+    
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #00000033;
+}
+
+.user-side-profile-container{
+    display: flex;
+    flex-direction: column;
+    width:270px;
+    height: 610px;
+    border-radius: 5px;
+}
+
+.user-side-profile-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    height:fit-content;
+    border-radius: 5px 5px 0px 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #00000033;
+  }
+  
+
+.user-side-profile-cover-pfp {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.user-side-profile-cover {
+    display: flex;
+    background-image: url("../../../assets/user-cover.png");
+    background-position: top center;
+    background-size: cover;
+    height: 120px;
+    border-radius: 5px 5px 0px 0px;
+    z-index: 1;
+}
+
+.user-side-profile-details-container{
+    display: flex;
+    width: 100%;
+    height: 180px;
+    
+}
+
+.user-side-picture-container {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    align-items: center; 
+    justify-content: center; 
+    top:170px;
+}
+  
+.user-side-profile-picture {
+    width: 140px;
+    height: 140px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #ffff;
+    background-color: white;
+    border-radius: 100%;
+    border: 3px solid rgb(235, 235, 235);
+}
+  
+
+.user-side-profile-det{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.user-side-profile-name{
+    font-family: "SSPro-Bold";
+    font-size: 22px;
+    height: auto;
+    color: #000000;
+}
+
+.user-side-profile-name i{
+    color: #017364;
+}
+
+.user-side-profile-number{
+    font-family: "Roboto-Light";
+    font-size: 14px;
+}
+
+.user-side-profile-course{
+    font-family: "Roboto-Light";
+    font-size: 14px;
+}
+
+.side-user-profile-updater-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #47B8B2;
+    color: #FFFFFF;
+    height: fit-content;
+    width: 140px;
+    font-family: "Roboto-Bold";
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; 
+    margin-top: 5px;
+  }
+
+  .side-user-profile-updater-btn:hover{
+    background-color: #017364;;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .side-user-profile-updater-btn i {
+    margin-left: 5px;
+    font-size: 16px;
+  }
+
+  .student-cont-bottom{
+    height: 100%;
+    width: 100%;
+    background-color: #F0F0F0;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px ;
+  }
+
+/* QR User Log Details */
+.qr-links-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.qr-user-details{
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    width: 130px;
+    padding: 0px 0px 0px 15px;
+}
+
+.user-side-qr-log{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.qr-det-title{
+    display: flex;
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+}
+
+.qr-det-time{
+    display: flex;
+    font-family: "Roboto-Regular";
+    font-size: 12px;
+}
+
+.user-log-type {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  
+  .user-log-type.time-out{
+    font-family: "Roboto-Medium";
+    font-size: 12px;
+    background-color: #E1B5B5;
+    color: #A71010;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+
+  
+  .user-log-type.time-in{
+    font-family: "Roboto-Medium";
+    font-size: 12px;
+    background-color: #8EDEBF;
+    color: #066741;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .user-attendance-rec-table-header-container {
+    display: flex;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid #00000033;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.user-record-searchbar-container {
+    display: flex;
+    align-items: center;
+    width: 250px;
+}
+
+.user-record-searchbar-container i {
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    padding: 9px 10px;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #404040;
+}
+
+/* Date Span Filter */
+.user-date-filter-rec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+}
+
+.user-date-before input {
+    font-size: 12px;
+    font-family: "Roboto-Regular";
+    color: #404040;
+    border: none;
+    background-color: #EFEFEF;
+    padding: 7px 15px;
+    margin: 10px 5px 10px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    border-radius: 5px;
+    width: 90px;
+}
+
+.user-date-after input {
+    font-size: 12px;
+    font-family: "Roboto-Regular";
+    color: #404040;
+    border: none;
+    background-color: #EFEFEF;
+    padding: 7px 15px;
+    margin: 10px 0px 10px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    border-radius: 5px;
+    width: 90px;
+}
+
+
+.left-header-record {
+    display: flex;
+    width: 100%;
+}
+/* Search Bar Container */
+.user-rec-search-bar {
+    display: flex;
+    flex-direction: row;
+    width:200px;
+}
+
+.user-rec-search-bar input {
+    font-size: 14px;
+    font-family: "Roboto-Regular";
+    color: #404040;
+    border: none;
+    background-color: #EFEFEF;
+    padding: 7px 10px;
+    /* margin: 10px 15px 10px 0px; */
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    border-radius: 0px 5px 5px 0px;
+}
+
+.user-attendance-rec-container {
+    width: 100%;
+    height: auto;
+}
+
+.user-print-footer, .user-print-header{
+    display: none;
+}
+
+/* Main Container */
+.staff-attendance-rec-mainbody{
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: auto;
+}
+
+.staff-attendance-rec-table-container{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid #00000033;
+}
+
+.staff-record-searchbar-container{
+    display: flex;
+    align-items: center;
+    width:250px;
+}
+
+.user-print-det{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    color: #333;
+}
+
+.user-acad-det{
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.signature{
+    width: 75px;
+    margin-bottom: -15px;
+}
+
+.user-print-sub{
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    margin:10px 0px;
+}
+
+.print-app-name-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.print-app{
+    display: flex;
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+}
+
+.print-app-name{
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+}
+
+.print-position{
+    display: flex;
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+}
+
+/* Media query for print */
+@media print {
+    @page {
+        margin: 20px 20px; 
+    }
+
+    body {
+        margin: 0; 
+    }
+
+    .user-print-header{
+        display: block;
+        width:100%;
+    }
+
+    .user-print-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .user-print-det{
+        display: flex;
+        margin-top:-5px ;
+        margin-bottom:10px; 
+    }
+
+    .user-attendance-rec-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 90px;
+        page-break-before: always;
+    }
+
+    .user-print-sub{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .user-print-footer {
+        margin-top: 20px;
+        width:100%;
+        display: block;
+    }
+
+
+}
+
+
+/* @media (max-width: 425px) {
+   /* .user-side-profile-body{
+    width: 420px;
+    margin-left:-13px;
+   } 
+    .user-body-container {     
+        display: flex;
+        flex-direction: column;
+        min-height: auto; 
+        overflow-x: hidden;
+    }
+
+    
+    .user-main-contents {
+        display: flex;
+        flex-direction: column; 
+        justify-content: flex-start; 
+        width: 100%;
+        height: auto; 
+    }
+
+    div.user-body-limiter {
+        display: flex;
+        justify-content: center;
+        flex-direction: column; 
+        padding: 10px; 
+        width: 350px; 
+        margin-left:23px
+    }
+
+    
+    .user-rec-search-bar input {
+        font-size: 14px;
+        font-family: 'Roboto-Regular';
+        color: #404040;
+        border: none;
+        background-color: #EFEFEF;
+        padding: 7px 10px;
+        margin: 10px 0;
+        width: 100%; 
+        border-radius: 5px; 
+    }
+
+    
+    .user-attendance-rec-container {
+        width: 100%;
+        height: auto; 
+    }
+
+  
+    .user-print-header,
+    .user-print-footer {
+        display: none; 
+    }
+    .staff-attendance-rec-mainbody{
+        width:400px;
+        margin-left: -47px;
+    }
+    div.attendance-rec-table-footer-container{
+        width:100%;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+    }
+    div.user-attendance-rec-table-header-container{
+        flex-wrap:wrap;
+    }
+    .user-side-profile-picture{
+        width:140px;
+        height:140px;
+    }
+   
+}
+ */
+
+ @media (max-width: 425px){
+    .user-side-profile-body{
+        align-items:center;
+        width:420px;
+    }
+    div.user-body-limiter{
+        flex-direction:column;
+        align-items:center;
+    }
+    .user-attendance-rec-table-header-container{
+        flex-direction:column;
+    }
+    .attendance-rec-table-footer-container
+    {
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    div.update-info-ff-1,.update-info-ff-2, .update-info-ff-3, .update-info-ff-4, .update-info-ff-5, .update-info-ff-6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+    }
+    div.update-info-form-field-ext{
+        align-items: center;
+        width:100%;
+    }
+}
+
+@media (max-width: 1024px){
+    div.user-body-limiter {
+        width: 100%;
+    }
+    .right-header-rec{
+        flex-wrap:wrap;
+    }
+}

@@ -1,0 +1,96 @@
+/*Locally Imported Fonts*/
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: light;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Old-English';
+    src: url('../fonts/Old/Olde-English-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+.header-body-container{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+
+}
+
+.header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-text{
+    font-family: 'Roboto-Regular';
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px ;
+}
+.header-text .header-school-name{
+    font-family: 'Roboto-Bold';
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-text .header-address-details{
+    
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header-text .header-email-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-text .header-contact-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container {
+    border-bottom: 1px solid #3f3f3f; 
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}

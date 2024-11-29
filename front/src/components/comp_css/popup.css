@@ -1,0 +1,367 @@
+/* Locally Imported Fonts */
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+
+/* Main Container */
+.main-popup-form-container {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.popup-form-container {
+    
+    width: 925px;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #00000033;
+    background-color: #EFEFEF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1002;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #00000033;
+    max-height: 100%; /* Adjust the maximum height as needed */
+    
+}
+
+
+
+/* Popup Form - Edit Header */
+.edit-popup-form-header {
+    display: flex;
+    background-color: #47B8B2;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid #00000033;
+    width: 100%;
+}
+
+.edit-popup-title-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #7a7878;
+    padding: 5px 15px;
+    width: 100%;
+}
+
+.epop-header-icon {
+    padding: 10px 0px;
+    margin: 0;
+}
+
+.epop-header-icon i {
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+}
+
+.epop-header-title p {
+    font-size: 20px;
+    font-family: 'Roboto-Bold';
+    margin: 0;
+}
+
+/* User Registration Container */
+.user-details-popup-container {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+}
+
+/* User Registration Upload Photo */
+.left-profile-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 15px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Profile Picture */
+.view-user-upload-main-container{
+    display: flex;
+    justify-content: center;
+}
+
+.view-user-upload-main-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    border: 10px solid #8b8b8b33;
+}
+
+.view-user-upload-main-container{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.view-user-upload-main-container button {
+    font-family: "Roboto-Medium";
+    font-size: 12px;
+    width: 100%;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+
+/* Upload File Container */
+.edit-profile-ff input[type="file"] {
+    font-size: 12px;
+    font-family: "Roboto-Regular";
+    background-color: #EFEFEF;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    width:150px;
+}
+
+.profile-download-btn{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    width:100%;
+}
+
+.profile-download-btn{
+    font-family: "Roboto-Medium";
+    font-size: 12px;
+    padding: 15px 10px;
+    width: 150px;
+    background-color: #188ABB;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.qr-download-btn{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    width:100%;
+}
+
+/* QR Code Container */
+.qr-code-main-cointainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-code-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-code-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    border: 10px solid #8b8b8b33;
+}
+
+
+.qr-download-btn{
+    font-family: "Roboto-Medium";
+    font-size: 12px;
+    padding: 15px 10px;
+    width: 150px;
+    background-color: #47B8B2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+
+/* User Data Right Portion */
+
+.user-info-right {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 85%;
+    height: fit-content;
+    overflow-y: scroll;
+}
+
+
+/* User Information Subheaders */
+.popup-subheader-container {
+    width: 100%;
+}
+
+.popup-subheader-container p {
+    font-family: "Roboto-Bold";
+    font-size: 16px;
+    color: #37aaa4;
+    margin: 0;
+    padding: 10px 5px 5px 10px;
+}
+
+/* User Basic Information Form Fields */
+.popup-basic-info-ff-container,
+.popup-user-account-info-ff-container,
+.popup-emergency-information-ff-container {
+    padding: 0 10px 0px 10px;
+}
+
+
+/* Form Field CSS - General */
+.popup-info-ff-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.popup-info-ff-2,
+.popup-info-ff-3,
+.popup-info-ff-4,
+.popup-info-ff-5,
+.popup-info-ff-6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.popup-info-form-field input,
+.popup-info-form-field select {
+    font-size: 12px;
+    font-family: "Roboto-Regular";
+    background-color: #EFEFEF;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+/* Drop Down */
+
+.popup-info-form-field option {
+    font-size: 12px;
+    font-family: "Roboto-Regular";
+    color: #525252;
+    background-color: #EFEFEF;
+    border: none;
+    margin-right: 5px;
+    height: 30px;
+}
+
+.popup-info-form-field,
+.popup-info-form-field-ext label {
+    font-family: "Roboto-Medium";
+    font-size: 12px;
+    padding: 2.5px 0;
+    color: #525252;
+}
+
+.popup-info-form-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.popup-info-form-field input:focus {
+    outline: 1px solid #47B8B2;
+    border: 1px solid #47B8B2;
+}
+
+.popup-info-form-field select:focus {
+    outline: 1px solid #47B8B2;
+    border: 1px solid #47B8B2;
+}
+
+.popup-info-form-field-ext {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.popup-info-form-field-ext input {
+    font-size: 12px;
+    font-family: "Roboto-Regular";
+    background-color: #EFEFEF;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.popup-info-form-field-ext input:focus {
+    outline: 1px solid #47B8B2;
+    border: 1px solid #47B8B2;
+}
+
+.ast {
+    font-size: 16px;
+    color: rgb(190, 50, 50);
+}
+
+.important-ff {
+    display: flex;
+    align-items: center;
+}
+
+.important-ff p {
+    margin: 0;
+    padding-left: 2px;
+}
+
+/* Create User Button */
+.popup-bottom-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+}
+
+.update-btn-container {
+    margin-right: 15px;
+}
+
+.update-user-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 30px;
+    background-color: #409B54;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    font-family: "Roboto-Medium";
+    font-size: 12px;
+}

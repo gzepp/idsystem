@@ -1,0 +1,432 @@
+/*Locally Imported Fonts*/
+
+@font-face {
+    font-family: 'SSPro-Bold';
+    src: url('../../../components/fonts/source-sans-pro/SourceSansPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('../../../components/fonts/Inter/Inter-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../../../components/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../../../components/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../../../components/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+
+/*Main*/
+.body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width: 100%;
+}
+
+/*Left Side*/
+
+.left_fgp3formwrapper{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.uniid_logo{
+    padding: 5% 0 0 5%;
+    
+}
+
+.logo{
+    height: 50px;
+}
+/*Main fgp3 Form Container With Header*/
+.left_fgp3form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Header fgp3 Form Container*/
+
+.header_fgp3form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+
+}
+.u_fgp3_header{
+    height: fit-content;
+    flex-direction: column;
+    color: #404040;
+    font-family: 'SSPro-Bold';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.u_fgp3_cap{
+    display: flex;
+    height: fit-content;
+    color: #586166;
+    font-family: 'Inter-Medium';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/*User fgp3 Details*/
+
+.u_fgp3_det{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 400px;
+    margin:10px 0px;
+}
+
+.user_ff{
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-around;
+}
+
+/*Password Input 1*/
+.form-field-pass {
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Add position relative to establish a stacking context */
+    font-family: "Roboto Regular";
+    font-size: 14px;
+    color: #586166;
+}
+
+.form-field-pass label{
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.ff-pass-sec {
+    display: flex;
+    flex-direction: row;
+    position: relative; /* Add position relative to establish a stacking context */
+}
+
+.form-field-pass input {
+    font-size: 14px;
+    font-family: "Roboto Regular";
+    background-color: #EFEFEF;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+    padding-right: 50px; /* Increase padding-right to accommodate the button */
+}
+
+.form-field-pass input:focus {
+    outline: 1px solid #47B8B2;
+    border: 1px solid #47B8B2;
+}
+
+.showBtn {
+    position: absolute; /* Position the button absolutely within the input container */
+    top: 50%; /* Vertically center the button */
+    right: 15px; /* Adjust the distance from the right edge */
+    transform: translateY(-50%); /* Center the button vertically using translate */
+    color: #47B8B2;
+    font-size: 15px;
+    cursor: pointer;
+    user-select: none;
+    font-family: "Roboto Medium";
+}
+
+/*Password Input 2*/
+.form-field{
+  display: flex;
+  flex-direction: column;
+}
+.form-field input{
+    font-size: 14px;
+    font-family: "Roboto Regular";
+    background-color: #EFEFEF;
+    border-radius:5px;
+    border:none;
+    outline: none;
+    padding: 15px;
+}
+
+.form-field label{
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/*Pass Strength*/
+
+form .indicator{
+    height: 8px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+form .indicator span{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: lightgrey;
+    border-radius: 5px;
+}
+
+form .indicator span:nth-child(2){
+    margin: 0 3px;
+}
+
+form .indicator span.active:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+
+}
+.indicator span.weak:before{
+background-color: #C76565;
+}
+.indicator span.medium:before{
+background-color: #F5CA62;
+}
+.indicator span.strong:before{
+background-color: #409B54;
+}
+
+.password-mismatch{
+    display: flex;
+    align-items: center;
+    font-family: "Roboto-Regular";
+    font-size: 12px;
+    color: #C76565;
+    height: 10px;
+    margin-top: 5px;
+}
+
+.fgp3-cred-error{
+    display: flex;
+    font-family: "Roboto-Medium";
+    font-size:14px;
+    color: #D87575;
+    margin: 5px 0px;
+}
+
+/*fgp3 Button*/
+.fgp3_btn{
+    margin-top: 10px;
+    padding: 0.7rem 9.25rem;
+    background-color: #47B8B2;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+    }
+
+/*Right Side*/
+
+.right_img{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../assets/shasm_rear.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+@media (max-width: 1024px){
+    .right_img{
+        background-position:center;
+    }
+}
+
+@media (max-width: 768px){
+    .right_img{
+        display:none;
+    }
+}
+
+@media (max-width: 425px){
+    .uniid_logo {
+        padding: 25px 0px 0px 30px;
+    }
+
+    .logo{
+        height:40px;
+    }
+
+    .header_fgp3form {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+    }
+
+    .u_fgp3_header {
+        height: 25px;
+        font-size: 26px;
+        font-style: normal;
+    }
+
+    .header_fgp3 {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+    }
+    
+    .u_fgp3_cap {
+        display: flex;
+        height: auto;
+        color: #586166;
+        font-family: 'Roboto-Medium';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        margin:10px 0px;
+    }
+
+    .u_fgp3_det {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        margin: 10px 0px;
+    }
+
+    .user_ff {
+        width: 350px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .fgp3-cont{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .form-field label{
+        text-align:left;
+    }
+
+    .form-field label, .form-field-s-pass label {
+        font-family: "Roboto-Regular";
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .fgp3_btn {
+        padding: 10px;
+    }
+
+
+    .showBtn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px){
+
+    .header_fgp3form {
+        width: 300px;
+    }
+
+    .header_fgp3 {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .u_fgp3_det {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: 10px 0px;
+    }
+
+    .user_ff {
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .fgp3-cont{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+    .fgp3_btn {
+        padding: 10px;
+    }
+
+
+    .showBtn {
+        font-size: 13px;
+    
+    }
+}
+
+
+
+

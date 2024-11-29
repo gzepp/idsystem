@@ -1,0 +1,119 @@
+/* Locally Imported Fonts */
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../../../components/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../../../components/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../../../components/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'SSPro-Bold';
+    src: url('../../../components/fonts/source-sans-pro/SourceSansPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+
+/* Delete Popup */
+.anno-del-modal{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    
+}
+
+.del-modal-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:300px;
+    height: auto;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1002;
+    background-color: #fff;
+    border-radius: 5px;
+    border: none;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.del-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 20px 10px 20px;
+}
+
+.del-icon{
+    color: #BC4949;
+    font-size: 36px;
+}
+
+.del-title{
+    font-family: "Roboto-Medium";
+    color: #181818;
+    font-size:18px;
+}
+
+.del-selection-container{
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto-Regular";
+    width:100%;
+    height: auto;
+    border-radius: 0px 0px 5px 5px;
+    font-size: 12px;
+}
+
+.confirm-del-btn{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #BC4949;
+    width:100%;
+    padding:10px;
+    border-radius: 0px 0px 0px 5px;
+}
+
+.confirm-del-btn:hover{
+    cursor:pointer;
+    background-color: #df4747;
+    font-family: "Roboto-Medium";
+
+}
+
+.cancel-del-btn{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #404040;
+    width:100%;
+    padding:10px;
+    border-radius: 0px 0px 5px 0px;
+}
+
+.cancel-del-btn:hover{
+    cursor:pointer;
+    background-color: #47B8B2;
+    font-family: "Roboto-Medium";
+
+}

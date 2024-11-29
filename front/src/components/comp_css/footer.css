@@ -1,0 +1,441 @@
+/* Locally Imported Fonts */
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: light;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'SSPro-Bold';
+    src: url('../fonts/source-sans-pro/SourceSansPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Old-English';
+    src: url('../fonts/Old-English/OldEnglishFive-axyVg.ttf') format('truetype');
+    font-weight: light;
+    font-size: normal;
+}
+
+.footer-body-cont{
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    bottom:0;
+    position: relative;
+}
+
+.footer-contents-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+    height: fit-content;
+    color: #404040;
+}
+
+/* Footer Main Contents */
+.footer-wallpaper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url("../../assets/sha-right-dark.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 350px;
+}
+
+.footer-contents-container{
+    display: flex;
+    width: 1440px;
+    padding: 0px 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Footer Logo */
+.footer-contents-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo-container-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0px;
+}
+
+.footer-logo-container{
+    display: flex;
+    width: 80px;
+    margin-right: 15px;
+}
+
+.footer-logo-container img{
+    width: 80px;
+}
+
+.footer-logo-det{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.shasm-title{
+    font-family: "Old-English";
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.shasm-since{
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 2px 0px;
+}
+
+.shasm-motto{
+    font-family: "Roboto-Medium";
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.footer-address-det{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0px;
+}
+
+.school-address, .school-contact, .school-email{
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+    
+}
+
+.school-address i, .school-contact i, .school-email i{
+    color: #47B8B2;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.txt-details{
+    padding: 2px 0px;
+    font-family: "Roboto-Light";
+    font-size: 15px;
+    color:#FFFFFF;
+}
+
+/* Navigation Footer */
+.footer-contents-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-title{
+    font-family: "Roboto-Bold";
+    font-size: 22px;
+    color: #FFFFFF;
+    padding-bottom: 5px;
+}
+
+.footer-home-link, .footer-records-link{
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 3px 0px;
+}
+
+.footer-home-link:hover, .footer-records-link:hover {
+    color:#47B8B2;
+}
+
+.logout-linking-page{
+    text-decoration: none;
+    display: flex;
+    width:100%;
+}
+
+/* Navigation Outside */
+.footer-contents-3{
+    display: flex;
+    flex-direction: column;
+}
+
+.connect-title{
+    font-family: "Roboto-Bold";
+    font-size: 22px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.shasm-outer-link{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.outer-link-btn{
+    display: flex;
+    color: #FFFFFF;
+    background-color: #2E9593;
+    padding: 8px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.outer-link-btn:hover{
+    background-color: #3bb1af;
+}
+
+.outer-link-btn i{
+    font-size: 28px;
+    color: #FFFFFF;
+    
+}
+
+/* Footer Footer Contents */
+.footer-footer{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1a1a1a ;
+    padding: 20px 0px;
+
+}
+
+.footer-txt{
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    color: #e2e2e2;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+@media (max-width: 768px){
+    .footer-logo-container-wrapper {
+        justify-content: flex-start;
+    }
+
+    .footer-logo-container {
+        display: flex;
+        width: 50px;
+        margin-right: 50px;
+    }
+
+    .shasm-title, .shasm-since {        
+        font-size: 12px;        
+    }
+
+    .txt-details {
+        padding: 2px 0px;
+        font-family: "Roboto-Light";
+        font-size: 12px;
+        color: #FFFFFF;
+    }
+
+    .footer-txt {
+        font-size: 12px;
+    }
+
+    .nav-title, .connect-title {
+        font-size: 20px;
+    }
+
+    .footer-contents-3 {
+        margin-left: 10px;
+    }
+
+    .footer-home-link, .footer-records-link {
+        font-size: 12px;
+    }
+    
+}
+
+@media (max-width: 425px){
+    .footer-contents-container {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer-logo-container {
+        padding: 5px;
+    }
+
+    .footer-wallpaper {
+        height: 480px;
+    }
+
+    .footer-contents-1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-contents-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-logo-container-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer-logo-container img {
+        width: 60px;
+    }
+
+    .footer-logo-container {
+        display: flex;
+        width: 60px;
+        margin-right: 0px;
+    }
+
+    .shasm-title, .shasm-motto, .shasm-since{
+        text-align: center;
+        font-size: 12px;   
+    }
+
+    .footer-logo-container-wrapper {
+        padding: 15px 0px;
+    }
+
+    .footer-address-det {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .school-address, .school-contact, .school-email {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 5px 0px;
+    }
+
+    .txt-details {
+        font-size: 12px;
+        color: #FFFFFF;
+        padding: 0px;
+        width:240px;
+        text-align: center;
+    }
+
+    .footer-contents-2 {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-title {
+        font-family: "Roboto-Bold";
+        font-size: 18px;
+        color: #FFFFFF;
+        padding-bottom: 5px;
+    }
+
+    .logout-linking-page {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .footer-contents-3 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .connect-title {
+        font-family: "Roboto-Bold";
+        font-size: 18px;
+        color: #FFFFFF;
+        padding-bottom: 10px;
+    }
+
+    .shasm-outer-link {
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .outer-link-btn {
+        display: flex;
+        color: #FFFFFF;
+        background-color: #2E9593;
+        padding: 8px;
+        border-radius: 100%;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+
+    .outer-link-btn i{
+        font-size: 24px;
+    }
+
+
+
+   
+}
+
+@media (max-width: 375px){
+
+    .header_fgp1 {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    
+
+
+    .S_showBtn {
+        font-size: 14px;
+    }
+}
+
+
+
+

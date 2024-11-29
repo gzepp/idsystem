@@ -1,0 +1,492 @@
+/*Locally Imported Fonts*/
+@font-face {
+    font-family: 'SSPro-Bold';
+    src: url('../../../components/fonts/source-sans-pro/SourceSansPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('../../../components/fonts/Inter/Inter-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../../../components/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../../../components/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../../../components/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+/*Main*/
+
+.body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width: 100%;
+}
+
+
+/*Left Side*/
+
+.left_fgp2wrapper{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.uniid_logo{
+    padding: 5% 0 0 5%;
+}
+
+.logo{
+    height: 50px;
+}
+
+/*Main fgp2 Form Container With Header*/
+.left_fgp2{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*email icon*/
+.fgp2_eicon{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    width:50px;
+    height: 50px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10px;
+}
+
+.bx.bx-envelope{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #47B8B2;
+    font-size: 28px;
+}
+
+/*Header fgp2 Form Container*/
+
+.header_fgp2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+
+}
+.u_fgp2_header{
+    height: 25px;
+    flex-direction: column;
+    color: #404040;
+    font-family: 'SSPro-Bold';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.u_fgp2_cap{
+    display: flex;
+    height: 30px;
+    text-align: center;
+    color: #586166;
+    font-family: 'Inter-Medium';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 15px;
+}
+
+/*User fgp2 Details*/
+.u_fgp2_det{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    
+}
+.DNE{
+    font-size: 14px;
+    font-family: "Roboto-Regular";
+    color: #404040;
+    margin: 5px 0px;
+}
+.click_dne{
+    font-family: "Roboto-Medium";
+    text-decoration: none;
+    color: #47B8B2;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.click_dne:hover{
+    color: #37928e;
+}
+
+.u_fp2_code{
+    display: flex;
+    margin: 5px 0px;
+    gap: 32px;
+    font-size: 22px;
+    font-family: "Roboto-Bold";
+    background-color: #EFEFEF;
+    color: #404040;
+    border-radius: 5px;
+    border: none;
+    padding: 20px;
+    width: 15px;
+    margin-left: 5px;
+    text-align: center;
+
+}
+
+.u_fp2_code:focus{
+    outline: 1px solid #47B8B2; /* Change the outline color to blue when in focus */
+    border: 1px solid #47B8B2;
+}
+
+
+.fgp2_continue{
+    display: flex;
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px 0px;
+    cursor:pointer;
+    background-color: #EFEFEF;
+    color: #404040;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.fgp2_continue:hover{
+    color: #47B8B2;
+}
+
+/*back to login Button*/
+.fgp2_bck{
+    text-decoration: none;
+}
+
+.back-btn:hover, .back-btn i:hover{
+    color: #47B8B2;
+}
+
+.back-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px;
+    color: #4D4D4D;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.fgp2-cred-error{
+    display: flex;
+    font-family: "Roboto-Medium";
+    font-size:14px;
+    color: #D87575;
+    margin: 5px 0px;
+}
+
+/* Loading Animation */
+.loading-overlay{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    color: #fff;
+}
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    
+  }
+  
+  .loading-icon-animation {
+    position: static;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    border: 6px solid transparent;
+    border-top-color: #47B8B2;
+    animation: border-animation 2s linear infinite, background-animation 2s linear infinite;
+    z-index: 0; /* Ensure animation is behind the icon */
+  }
+  
+  .loading-text {
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    margin-top: 20px;
+    opacity: 0; /* Start with text hidden */
+  animation: fadeIn .5s ease-in-out forwards; /* Apply the fade-in animation */
+  }
+  
+  @keyframes border-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes background-animation {
+    0%, 100% {
+      background-color: transparent;
+    }
+    50% {
+      background-color: #47B8B2;
+    }
+  }
+  
+  
+@keyframes fadeIn {
+    0% {
+      opacity: 0; /* Start with text hidden */
+    }
+    100% {
+      opacity: 1; /* Fully visible at the end of the animation */
+    }
+  }
+
+/*Right Side*/
+
+.right_img{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../assets/shasm_rear.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+@media (max-width: 1024px){
+    .right_img{
+        background-position:center;
+    }
+}
+
+@media (max-width: 768px){
+    .right_img{
+        display:none;
+    }
+}
+
+@media (max-width: 425px){
+    .uniid_logo {
+        padding: 25px 0 0 30px;
+    }
+
+    .logo{
+        height:40px;
+    }
+
+    .header_fgp2 {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+    }
+
+    .fgp2_eicon {
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        background: #FFF;
+        margin-bottom: 5px;
+    }
+
+    .bx.bx-envelope {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #47B8B2;
+        font-size: 24px;
+    }
+
+    .u_fgp2_header {
+        height: 25px;
+        font-size: 26px;
+        font-style: normal;
+    }
+
+    .u_fgp2_cap {
+        display: flex;
+        height: auto;
+        color: #586166;
+        font-family: 'Roboto-Medium';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        margin:10px 0px 5px 0px;
+    }
+
+    .u_fgp2_det {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+    }
+
+    .u_fp2_code {
+        display: flex;
+        margin: 5px 0px;
+        gap: 32px;
+        font-size: 20px;
+        font-family: "Roboto-Bold";
+        background-color: #EFEFEF;
+        color: #404040;
+        border-radius: 5px;
+        border: none;
+        padding: 15px;
+        width: 15px;
+        margin-left: 5px;
+        text-align: center;
+    }
+
+    .fgp2_continue {
+        font-size: 12px;
+        margin: 5px 0px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .DNE {
+        font-size: 12px;
+        font-family: "Roboto-Regular";
+        color: #404040;
+        margin: 5px 0px;
+    }
+
+    .back-btn {
+        padding: 10px 20px;
+        font-family: "Roboto-Medium";
+        font-size: 12px;
+    }
+
+
+
+    
+}
+
+@media (max-width: 375px){
+
+    .header_fgp1 {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .u_fgp1_header {
+        height: 25px;
+        font-size: 26px;
+        font-style: normal;
+    }
+    
+    .fgp1-cont{
+        width: 300px;
+    }
+
+    .u_fgp1_det {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: 10px 0px;
+    }
+
+    .userfgp1_ff {
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .fgp1_btn {
+        padding: 0.7rem 9.25rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 300px;
+        font-size: 14px;
+    }
+
+    .fgp2-cred-error {
+        display: flex;
+        font-family: "Roboto-Medium";
+        font-size: 12px;
+        color: #D87575;
+        margin: 5px 0px;
+    }
+
+
+
+    .S_showBtn {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,554 @@
+/* Locally Imported Fonts */
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../../../components/fonts/Roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../../../components/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../../../components/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../../../components/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+
+/* Main Container */
+.a-attendance-rec-mainbody{
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: auto;
+}
+
+.a-attendance-rec-table-container{
+    margin: 35px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid #00000033;
+}
+
+
+
+/* Table Header */
+
+.attendance-rec-table-header-container{
+    display: flex;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid #00000033;
+    width: 100%;
+}
+
+.attendance-rec-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #525252;
+    padding:5px 15px;
+    width: 250px;
+}
+
+.attendance-rec-icon{
+    padding: 10px;
+    margin: 0;
+}
+
+.attendance-rec-icon i{
+    font-size: 24px;
+    color: #525252;
+}
+
+.attendance-rec-text{
+    font-size: 20px;
+    font-family: 'Roboto-Bold';
+    margin: 0;
+    color: #525252;
+}
+
+.left-header-rec{
+    display: flex;
+    
+}
+
+.right-header-rec{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width:100%;
+    margin-right:15px;
+}
+
+
+/* Records - Filter Function */
+.a-record-filter-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #525252;
+    padding:5px 15px;
+    width:130px;
+}
+
+.filter-row-text{
+    font-size: 14px;
+    font-family: "Roboto-Regular";
+    color: #404040;
+}
+
+.filter-row-container input{
+    font-size: 14px;
+    font-family: "Roboto-Regular";
+    color: #404040;
+    border: none;
+    background-color: #EFEFEF;
+    margin: 10px 5px;
+    height:20px;
+    width: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    border-radius: 5px;
+}
+
+.filter-row-container input:focus{
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+}
+/* Admin Header - Search Function */
+.staff-record-searchbar-container{
+    display: flex;
+    align-items: center;
+    width:100%;
+}
+
+.staff-record-searchbar-container i{
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    padding: 9px 10px;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #404040;
+    margin-left:15px;
+}
+
+.rec-searchbar-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.rec-search-bar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.rec-search-bar input{
+    font-size: 14px;
+    font-family: "Roboto-Regular";
+    color: #404040;
+    border: none;
+    background-color: #EFEFEF;
+    padding: 7px 15px;
+    margin: 10px 15px 10px 0px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    border-radius: 0px 5px 5px 0px;
+}
+
+.rec-search-bar input:focus{
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+/* Admin Header - Date Filter */
+.date-filter-rec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.date-before input{
+    font-size: 12px;
+    font-family: "Roboto-Regular";
+    color: #404040;
+    border: none;
+    background-color: #EFEFEF;
+    padding: 7px 15px;
+    margin: 10px 10px 10px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    border-radius:5px;
+    width:100px;
+}
+
+.date-after input{
+    font-size: 12px;
+    font-family: "Roboto-Regular";
+    color: #404040;
+    border: none;
+    background-color: #EFEFEF;
+    padding: 7px 15px;
+    margin: 10px 0px 10px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    border-radius:5px;
+    width:100px;
+}
+
+.date-input {
+    direction: rtl;
+  }
+/* attendance Records Container */
+.attendance-rec-container{
+    width: 100%;
+    height: auto;
+}
+
+.attendance-rec-main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.attendance-rec-row-header{
+    background-color: #7C7A7A;
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    padding: 12px 0;
+    color:white;
+}
+
+.attendance-rec-row-data:nth-child(even){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F9F9F9;
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    padding: 6px 0;
+    color:#181818;
+}
+
+.attendance-rec-row-data:nth-child(odd){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0F0F0;
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    padding: 6px 0;
+    color:#181818;
+}
+
+tr{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.small-det-container{
+    display: flex;
+    width:100%;
+    justify-content: center;
+
+
+}
+
+.medium-det-container{
+    display: flex;
+    width:110%;
+    justify-content: center;
+}
+.large-det-container{
+    display: flex;
+    width:120%;
+    justify-content: center;
+}
+
+
+/* CRUD Buttons */
+.record-actions-container{
+    display: flex;
+    width:80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.rec-view-btn{
+    padding: 7px 8px;
+    margin-right: 3px;  
+    background-color: #5DCAC4;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+}
+
+.rec-edit-btn{
+    padding: 7px 8px;
+    margin-right: 3px;    
+    background-color: #F5CA62;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+}
+
+.rec-del-btn{
+    padding: 7px 8px;
+    margin-right: 3px;    
+    background-color: #F38080;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+}
+
+/* Bottom Options */
+.attendance-rec-table-footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0F0F0;
+    padding: 15px 10px;
+    border-top: #00000033 solid 1px;
+    border-radius: 0px 0px 5px 5px;    
+}
+
+.attendance-rec-entry-count-container{
+    display: flex;
+    font-size: 12px;
+    font-family: "Roboto-Light";
+    color: #181818;
+    padding: 5px 10px;
+}
+
+.entry-count-indicator{
+    margin-right: 5px;
+}
+
+/* Previous-Next Page */
+
+.page-next-prev-btn-container{
+    display:flex;
+    align-items:center ;
+}
+
+.prev-btn{
+    font-size: 14px;
+    font-family: "Roboto-Regular";
+    color: #7C7A7A;
+    padding: 5px 10px;
+}
+
+.prev-btn:hover{
+    font-size: 14px;
+    font-family: "Roboto-Medium";
+    color: #404040;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.next-btn{
+    font-size: 14px;
+    font-family: "Roboto-Regular";
+    color: #5DCAC4;
+    padding: 5px 20px;
+}
+
+.next-btn:hover{
+    font-size: 14px;
+    font-family: "Roboto-Medium";
+    color: #3fccc5;
+    padding: 5px 20px;
+    cursor:pointer;
+}
+
+.page-num-indicator{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.page-num-indicator-txt{
+    font-size: 14px;
+    font-family: "Roboto-Regular";
+    color: #404040;
+    padding: 5px 10px;
+}
+
+.page-indicator-main{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #00000033;
+    padding: 5px ;
+    border-radius: 5px;
+}
+
+.shaded-num-indicator-cont{
+    font-size: 14px;
+    font-family: "Roboto-Regular";
+    color: #404040;
+    padding: 5px 0px;
+    
+
+}
+
+.num-indicator-cont-1{
+    font-size: 14px;
+    font-family: "Roboto-Regular";
+    color: #404040;
+    padding: 5px 10px;
+    border-right: 1px solid #00000033;
+}
+
+.num-indicator-cont-2{
+    font-size: 14px;
+    font-family: "Roboto-Regular";
+    color: #404040;
+    padding: 5px 10px;
+    border-left: 1px solid #00000033;
+}
+
+
+/* Bottom Buttons */
+.attendance-rec-btn{
+    display:flex;
+    align-items:center ;
+}
+.print-id-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2E9593;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    border: none;
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.print-id-btn i{
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.print-rec-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #409B54;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    border: none;
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.print-rec-btn i{
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.log-type{
+    width:50px;
+}
+
+.log-type.Time-In {
+    border-radius: 5px;
+    background-color: #8EDEBF;
+    font-family: "Roboto-Bold";
+    font-size: 12px;
+    padding: 8px 25px;
+    color: #066741;
+  }
+  
+  .log-type.Time-out {
+    border-radius: 5px;
+    background-color: #E1B5B5;
+    font-family: "Roboto-Bold";
+    font-size: 12px;
+    padding: 8px 25px;
+    color: #A71010;
+  }
+  
+  
+  
+
+.print-header, .print-footer {
+    display: none;
+  }
+
+.no-data-found-message{
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+    padding: 20px;
+    color: #404040;
+  }
+  
+/* Media query for print */
+@media print {
+    .print-header, .print-footer{
+        display: block; 
+    }
+}
+
+@media print {
+    .print-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 20px 0px;
+    }
+  }
+
+@media print {
+    .attendance-rec-print .record-actions-container {
+      display: none;
+    }
+  }
+
+  @media print {
+    .attendance-rec-print{
+      display: flex;
+      flex-direction: column;
+      align-items: center;  
+      margin: 20px 80px;
+    }
+  }
+
+
+  
+
+  

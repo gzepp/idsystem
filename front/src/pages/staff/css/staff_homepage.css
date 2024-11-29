@@ -1,0 +1,529 @@
+/* Locally Imported Fonts */
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../../../components/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../../../components/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../../../components/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'SSPro-Bold';
+    src: url('../../../components/fonts/source-sans-pro/SourceSansPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+
+/* Staff Main Container */
+
+.staff-body-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    overflow-x: hidden;
+}
+
+/* Staff Contents */
+
+.staff-main-contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+}
+.staff-body-limiter {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 30px;
+    height: 100%;
+    width:1440px;
+}
+
+.staff-misc-body{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-right: 10px;
+}
+
+.staff-profile-contents{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    height:205px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.staff-cover-pfp {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.staff-cover {
+    background-image: url("../../../assets/staff-cover.png");
+    background-position: center center;
+    height: 120px;
+    border-radius: 5px 5px 0px 0px;
+    z-index: 1;
+}
+
+.staff-details-container{
+    display: flex;
+    margin: 40px;
+}
+
+.staff-picture {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    width: 140px;
+    height: 140px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-radius: 100%;
+    border: solid 3px #dadada; 
+    top:130px;
+}
+
+.staff-det{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-left:165px;
+    margin-top: -38px;
+}
+
+.staff-name{
+    font-family: "SSPro-Bold";
+    font-size: 22px;
+}
+
+.staff-number{
+    font-family: "Roboto-Light";
+    font-size: 14px;
+}
+
+
+/* Instruction Container */
+.staff-instruction-container{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    background-image: url(../../../assets/SHA_right.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 405px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.staff-empty{
+    width: 50%;
+}
+
+.staff-instruction-det{
+    width: 50%;
+    height: 300px;
+    padding: 15px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+.staff-inst-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-cont{
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 22px;
+    color: #47B8B2;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.staff-header-txt{
+    font-family: "SSPro-Bold";
+    font-size: 28px;
+    color: #404040;
+}
+
+.staff-header-det{
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+    width:80%;
+    text-align: center;
+    color: #7C7A7A;
+}
+
+.inst-det-1-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    width: 80%;
+    text-align: justify;
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+    color: #7C7A7A;
+}
+
+.inst-2{
+    margin-top: 5px;    
+}
+
+
+/* Staff Camera Container */
+
+.staff-camera-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:40%;
+    background-color: #f5f5f5;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+}
+
+.staff-camera-container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.camera-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px 0px 0px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.qr-scanner-title{
+    font-family: "Roboto-Bold";
+    font-size: 20px;
+    border-bottom: solid 3px #47B8B2;
+}
+
+.qr-scanning-details{
+    font-family: "Roboto-Regular";
+    font-size: 12px;
+    color: #404040;
+    padding: 5px;
+}
+
+.camera-conf-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.qr-logtype-btn,
+.qr-loc-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.qr-logtype-btn select,
+.qr-loc-btn select {
+    padding: 5px 20px;
+    background-color: #f7f7f7;
+    color: #404040;
+    font-family: "Roboto-Medium";
+    font-size: 12px;
+    border: 1px solid #7C7A7A;
+    width: 100%;
+}
+
+/* Camera Main Container */
+.camera-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    height: 450px;
+    background-color: #252525;
+}
+
+.scan-status{
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.cam-switch-btn {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.cam-switch-btn select {
+    padding: 8px 10px;
+    border: none; /* Remove the border */
+    border-radius: 5px;
+    background-color: #020202;
+    color: #fff;
+    font-size: 12px;
+    font-family: "Roboto-Medium";
+}
+
+.cam-switch-btn select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    background-color: #020202;
+    color: #fff; 
+    padding: 0 5px; 
+}
+
+.cam-switch-btn select:focus {
+    box-shadow: 0 0 4px rgba(71, 184, 178, 0.5);
+}
+
+.cam-scanner-footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: #fff;
+}
+
+.initiate-cam-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: "Roboto-Medium";
+    font-size: 12px;
+    text-align: center;
+    background-color: #47B8B2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.initiate-cam-btn:hover {
+    background-color: #368A84;
+}
+
+.initiate-cam-btn:disabled {
+    background-color: #ccc; 
+    cursor: not-allowed;
+}
+
+
+/* Camera Overlay */
+.qr-scan-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    z-index: 20;
+}
+
+.scan-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 225px;
+    background-color: #47B8B2;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.student-pfp-scan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width:100%;
+    margin-bottom: 10px;
+}
+
+.student-pfp-scan img{
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: solid 2px #f4f4f4 ;
+    
+}
+
+.student-pfp-scan i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #F38080;
+    border: solid 2px #f4f4f4 ;
+    color: #A71010;
+    font-size: 28px;
+}
+
+
+.student-namedet-scan{
+    display: flex;
+    flex-direction: column;
+    background-color: #012E41;
+    color: #ffff;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px 5px 15px;
+    
+    border-radius: 5px;
+}
+
+.student-name-txt{
+    font-family: "SSPro-Bold";
+    font-size: 16px;
+}
+
+.student-namedet-txt{
+    font-family: "Roboto-Light";
+    font-size: 12px;
+}
+
+.scan-body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-top:15px;
+    align-items: center;
+}
+
+.scan-status-qr{
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+    margin: 5px 0px;
+    padding: 5px 10px;
+    text-align: center;
+    color: #ffff;
+    background-color: #252525;
+    border-radius: 5px;
+}
+
+.scan-qr-det{
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+
+.succ-icon-qr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 10px 0px;
+}    
+
+.succ-icon-qr img{
+    width: 235px;
+    height: auto;
+    margin-left: 35px;
+}
+
+.scan-footer{
+    border-top: 1px solid #d3d3d3; /* Specify the border with "1px solid" and the color */
+    width:100%;
+    height:65px;
+}
+
+/* Staff Footer  */
+
+.staff-footer {
+    text-align: center;
+    margin-top: auto;
+}
+
+@media (max-width: 768px){
+    .staff-misc-body {
+       display: none;
+    }
+
+    .staff-profile-contents {
+        display: none;
+    }
+
+    .staff-instruction-container {
+        display: none;
+    }
+
+    .staff-camera-wrapper {
+        width: 300px;
+    }
+ }
+ 

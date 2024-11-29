@@ -1,0 +1,246 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../../../components/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('../../../components/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+  font-weight: medium;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../../../components/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: 'SSPro-Bold';
+  src: url('../../../components/fonts/source-sans-pro/SourceSansPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-size: normal;
+}
+
+.news-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.news-background{
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #e4e4e4;
+  padding: 20px 0px;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.swiper {
+  padding: 70px 380px;
+  width: 100%;
+  display: flex;
+  
+}
+
+.swiper::before {
+  content: "";
+  position: absolute;
+  margin: 10px 0px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  
+}
+
+.swiper-slide{
+  width: fit-content;
+
+}
+.swiper-wrapper{
+  display: flex;
+  width: auto;
+  height: auto;
+
+}
+
+.news-header {
+  margin: 0 50px;
+}
+
+
+.news-image .news-picture {
+  height: 450px;
+  width: 800px;
+  object-fit: cover;
+  border-radius: 5px 5px 0px 0px;
+}
+
+
+.news-body {
+  border-radius: 0px 0px 5px 5px;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, #47B8B2, transparent);
+
+}
+
+.news-headline-container{
+  padding: 40px 40px;
+  width: 100%;
+}
+
+.news-status {
+  display: flex;
+  align-items: center;
+}
+
+.news-status .circle-icon {
+  width: 8px;
+  height: 8px;
+  background-color: #75e9ed;
+  border-radius: 50%;
+}
+
+.news-status .status-text {
+  font-size: 12px;
+  font-family: 'Roboto-Regular';
+  margin-left: 5px;
+  color: #fff;
+}
+
+.news-title .title-text {
+  font-family: 'SSPro-Bold';
+  font-size: 24px;
+  color: #fff;
+}
+
+.news-date .date-text {
+  color: rgba(0, 0, 0, 0.65);
+  text-align: justify;
+  font-family: 'Roboto-Regular';
+  font-size: 12px;
+  color: #fff;
+}
+
+.news-text {
+  margin: 10px 0;
+  width: 100%;
+  height: 90px;
+  color: #fff;
+}
+
+.news-text .content-text {
+  font-size: 12px;
+  font-weight: 200;
+  font-family: 'SSP';
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.news-button {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.news-button .button-news {
+  margin: 8px 0;
+  font-size: 12px;
+  width: 90px;
+  height: 32px;
+  border-radius: 5px;
+  background: #ffaa28;
+  color: #f9f9f9;
+  text-align: center;
+  font-family: 'SourceSans';
+  outline: none;
+  border: none;
+}
+
+.news-button .button-news:hover{
+  background: rgb(253, 158, 15);
+}
+
+
+.swiper-button-prev{
+  color: #fff;
+} 
+
+.swiper-button-next{
+  color: #fff;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover{
+  color: #007aff;
+}
+
+/* Pagination Card */
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:absolute;
+  z-index: 1000;
+  top: 425px;
+  
+}
+
+/* Use the existing CSS as a basis */
+.swiper-pagination-bullet {
+  margin-left: 10px;
+  height: 8px;
+  width: 45px;
+  background-color: #C7D3EB; /* Default bullet color */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Define the active bullet color */
+.swiper-pagination-bullet-active {
+  background-color: #ffff /* Active bullet color */
+}
+
+
+
+
+
+
+
+

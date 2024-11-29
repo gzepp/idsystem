@@ -1,0 +1,208 @@
+/* Locally Imported Fonts */
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: light;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'SSPro-Bold';
+    src: url('../fonts/source-sans-pro/SourceSansPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+
+}
+.a-topbar-main{
+    overflow: hidden;
+    width: 100%;
+}
+
+.a-topbar-main .a-topbar-cont{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    color: #404040;
+}
+
+
+/*Left container - Expand Button and Header */
+
+.a-topbar-main .a-topbar-cont .left-port{
+    display: flex;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.menu-exp-cont{
+    padding: 15px 20px;
+}
+
+.bx-menu{
+    color: #404040;
+    font-size: 28px;
+}
+
+
+.a-topbar-main .a-topbar-cont .left-port .page-header-name{
+    display: flex;
+    flex-direction: column;
+    padding: 20px, 0px;
+}
+
+.a-page-name{
+    font-family: "SSPro-Bold";
+    font-size: 24px;
+    margin: 0px;
+}
+
+.time-date{
+    font-family: "Roboto-Light";
+    font-size: 12px;
+    margin: 0px;
+}
+
+/* Right container - Logout Button */
+.a-topbar-main .a-topbar-cont .right-port {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.logout-container {
+    display: flex;
+    margin-right: 15px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    width:40px;
+}
+
+.logout-container:hover {
+    margin-right: 15px;
+    padding: 10px 15px;
+    border-radius: 100%;
+}
+
+.bx-log-out {
+    color: #404040;
+    transform: scaleX(-1);
+    font-size: 28px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* Log Out Confirmation */
+
+.logout-modal{
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.logout-modal-container{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    width:300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    border-radius: 5px;
+    border: none;
+    height: auto;
+    background-color: #ffffff;
+}
+
+.logout-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 20px 10px 20px;
+}
+
+.logout-icon{
+    color: #47B8B2;
+    font-size: 36px;
+}
+
+.logout-title{
+    font-family: "Roboto-Medium";
+    color: #181818;
+    font-size:16px;
+}
+
+.logout-selection-container{
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto-Medium";
+    width:100%;
+    height: auto;
+    border-radius: 0px 0px 5px 5px;
+    font-size: 12px;
+}
+
+.cancel-logout-btn{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #757575;
+    width:100%;
+    padding:10px;
+    border-radius: 0px 0px 0px 5px;
+}
+
+.cancel-logout-btn:hover{
+    cursor:pointer;
+    background-color: #404040;
+    font-family: "Roboto-Medium";
+
+}
+
+.confirm-logout-btn{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #47B8B2;
+    width:100%;
+    padding:10px;
+    border: 1px solid #47B8B2;
+    border-radius: 0px 0px 5px 0px;
+}
+
+.confirm-logout-btn:hover{
+    cursor:pointer;
+    color: #404040;
+    font-family: "Roboto-Medium";
+    background-color: #F5F5F5;
+    border: 1px solid #47B8B2;
+    border-radius: 0px 0px 5px 0px;
+}
+
+.logout-linking-page{
+    text-decoration: none;
+    display: flex;
+    width:100%;
+}
+
+.qr-popup-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+}

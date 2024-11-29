@@ -1,0 +1,415 @@
+/* Locally Imported Fonts */
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../../../components/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../../../components/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../../../components/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'SSPro-Bold';
+    src: url('../../../components/fonts/source-sans-pro/SourceSansPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+
+/* Staff Main Container */
+
+.staff-body-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    overflow-x: hidden;
+}
+
+/* Staff Contents */
+
+.staff-main-contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+}
+.staff-body-limiter {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 30px;
+    height: 100%;
+    width:1440px;
+}
+
+.staff-misc-body{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-right: 10px;
+}
+
+.staff-profile-contents{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    height:205px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.staff-lower-topbar {
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 35px;
+    height: 100%;
+    width: 100%;
+    background-color: #47B8B2;
+}
+
+.lower-topbar-txt {
+    padding: 0px 5px;
+    width: 1440px;
+}
+/* Staff Footer  */
+
+.staff-footer {
+    text-align: center;
+    margin-top: auto;
+}
+
+/* User Registration Container */
+.staff-ureg-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid #00000033;
+    margin: 15px 0px;
+}
+
+/* User Account Registration Header */
+.ureg-form-header {
+    display: flex;
+    background-color: #ffff;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid #00000033;
+}
+
+.ureg-title-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    color: #525252;
+    padding: 5px 15px;
+}
+
+.back-btn-page{
+    display: flex;
+    text-decoration: none;
+}
+.ureg-header-icon {
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.ureg-header-icon :hover{
+    color:#37aaa4;
+}
+
+.ureg-header-icon i {
+    font-size: 24px;
+    color: #525252;
+}
+
+/* Tooltip Text */
+.ureg-title-container .back-tooltip {
+  visibility: hidden;
+  font-family: "Roboto-Medium";
+  font-size: 12px;
+  background-color: #444444;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px 10px;
+  width: fit-content;
+  position: absolute;
+  z-index: 1;
+  bottom: 70%; 
+left: 20%;
+margin-left: -15px; 
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+/* Show the Tooltip on Hover */
+.ureg-title-container:hover .back-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.ureg-header-title p {
+    font-size: 20px;
+    font-family: 'Roboto-Bold';
+    margin: 0;
+}
+
+/* User Registration Container */
+.user-reg-input-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* User Registration Upload Photo */
+.ureg-upload-profile-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px 35px;
+    justify-content: center;
+}
+
+.ureg-profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 100px;
+    height: 120px;
+    width: 120px;
+    border: 15px solid #d8d8d8;
+}
+
+
+.user-upload.main.container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.user-upload.main.container{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.user-upload.main.container button {
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+    width: 100%;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 0;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+
+
+.u-reg-form-field input[type="file"] {
+    font-size: 14px;
+    font-family: "Roboto-Regular";
+    background-color: #EFEFEF;
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    margin-left: 5px;
+    width:175px;
+}
+
+
+/* User Registration Subheaders */
+.subheader-container {
+    width: 100%;
+}
+
+.subheader-container p {
+    font-family: "Roboto-Bold";
+    font-size: 18px;
+    color: #37aaa4;
+    margin: 10px 5px 5px 0px;
+    padding: 10px 5px 10px 10px;
+}
+
+/* User Basic Information Form Fields */
+.basic-info-ff-container,
+.user-account-info-ff-container,
+.emergency-information-ff-container {
+    padding: 0 30px 0px 10px;
+}
+
+.u-basicinformation {
+    padding: 5px;
+    width: 95%;
+}
+
+/* Form Field CSS - General */
+.user-reg-ff-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.user-reg-ff-2,
+.user-reg-ff-3,
+.user-reg-ff-4,
+.user-reg-ff-5,
+.user-reg-ff-6 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+}
+
+.u-reg-form-field input,
+.u-reg-form-field select {
+    font-size: 14px;
+    font-family: "Roboto-Regular";
+    background-color: #EFEFEF;
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    margin-right: 5px;
+}
+
+/* Drop Down */
+
+.u-reg-form-field option {
+    font-size: 14px;
+    font-family: "Roboto-Regular";
+    color: #525252;
+    background-color: #EFEFEF;
+    border: none;
+    margin-right: 5px;
+    height: 30px;
+}
+
+.u-reg-form-field,
+.u-reg-form-field-ext label {
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+    color: #525252;
+}
+
+.u-reg-form-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.u-reg-form-field input:focus {
+    outline: 1px solid #47B8B2;
+    border: 1px solid #47B8B2;
+}
+
+.u-reg-form-field select:focus {
+    outline: 1px solid #47B8B2;
+    border: 1px solid #47B8B2;
+}
+
+.u-reg-form-field-ext {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.u-reg-form-field-ext input {
+    font-size: 14px;
+    font-family: "Roboto Regular";
+    color: #525252;
+    background-color: #EFEFEF;
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    margin-right: 5px;
+}
+
+.u-reg-form-field-ext input:focus {
+    outline: 1px solid #47B8B2;
+    border: 1px solid #47B8B2;
+}
+
+.ast {
+    font-size: 16px;
+    color: rgb(190, 50, 50);
+}
+
+.important-ff {
+    display: flex;
+    align-items: center;
+}
+
+.important-ff p {
+    margin: 0;
+    padding-left: 2px;
+}
+
+/* Create User Button */
+.bottom-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.create-btn-container {
+    margin-right: 35px;
+}
+
+.create-user-btn {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px 30px;
+    background-color: #409B54;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+}
+
+@media (max-width: 768px){
+    .staff-misc-body {
+       display: none;
+    }
+
+    .staff-profile-contents {
+        display: none;
+    }
+
+    .staff-instruction-container {
+        display: none;
+    }
+
+    .staff-body-limiter {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+    }
+
+
+ }

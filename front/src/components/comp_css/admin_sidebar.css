@@ -1,0 +1,564 @@
+/*Locally Imported Fonts*/
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto/Roboto-Light.ttf') format('truetype');
+    font-weight: light;
+    font-size: normal;
+}
+
+
+/* Admin Sidebar Main*/
+
+.linking-page{
+    text-decoration: none;
+}
+
+.SB_body{
+    display: flex;
+    position: sticky;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.a_sidebar{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 240px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    border-right: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+    transition: width 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+}
+
+.a_sidebar.close{
+    width: 80px;
+    transition: width 0.3s ease;
+    border-right: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+
+/*top-header*/
+.a_sidebar .header-logo{
+    border: 0;
+}
+
+.a_sidebar .header-logo {
+    display: flex;
+    align-items: center;
+    width: 240px;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    transition: width 0.1s ease;
+  }
+  
+  .a_sidebar.close .header-logo {
+    width: 80px;
+    height: 40px;
+    padding: 15px 0;
+    background-color: #F5F5F5;
+    border-top: 1px solid rgba(0, 0, 0, 0.10);
+    transition: width 0.1s ease;
+  }
+  
+  .a_sidebar .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    min-width: 80px;
+  }
+  
+  .a_sidebar .logo-container:hover {
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .a_sidebar .logo-container .uniid-logo {
+    height: 35px;
+  }
+  
+  .a_sidebar .header-logo .uniid-txt-logo {
+    height: 30px;
+    margin-left: 5px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition-delay: 0.1s;
+  }
+  
+  .a_sidebar.close .header-logo .uniid-txt-logo {
+    transition-delay: 0s;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+.a_sidebar .txt-logo-container{
+    display: flex;
+    align-items: center;
+    padding: 15px 0px;
+    width:240px;
+    background-color: #F5F5F5;
+    border-bottom: 1px  solid rgba(0, 0, 0, 0.10);
+    transition: width 0.1s ease;
+}
+
+.a_sidebar.close .txt-logo-container{
+    display: flex;
+    align-items: center;
+    width: 80px;
+    padding: 15px 0;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    overflow: hidden;
+    transition: width 0.1s ease;
+
+}
+.a_sidebar .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    min-width: 80px;
+}
+
+.a_sidebar.close .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    min-width: 80px;
+}
+
+
+.a_sidebar .logo-container:hover {
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.a_sidebar .logo-container .uniid-logo{
+    height: 35px;
+}
+
+.a_sidebar .txt-logo-container .uniid-txt-logo{
+    height: 30px;
+    margin-left: 5px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition-delay: 0.1s;
+}
+
+.a_sidebar.close .txt-logo-container .uniid-txt-logo{
+    transition-delay: 0s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/*Menu Details*/
+
+
+.a_sidebar .a-menu-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 240px;
+    background-color:#FFFFFF;
+    justify-content: space-between;
+    border-right: 1px solid rgba(0, 0, 0, 0.10);
+    transition: opacity 0.3s ease; /* Add transition property */
+}
+
+.a_sidebar.close .a-menu-container{
+    height: 100%;
+    width: 80px;
+    background-color:#FFFFFF;
+    justify-content: space-between;
+    border-right: 1px solid rgba(0, 0, 0, 0.10);
+    transition: opacity 0.3s ease; /* Add transition property */
+}
+
+.a_sidebar .a-menu-links li{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color:#FFFFFF;
+    margin-top:0px;
+    height: 50px;
+    list-style: none;
+    color: #404040;
+}
+
+.a_sidebar .a-menu-links li:hover{
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+.a_sidebar .a-menu-links{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    margin: 5px 0;
+    background-color:#FFFFFF;
+    justify-content: space-between;
+    border-right: 1px solid rgba(0, 0, 0, 0.10);
+
+}
+
+.a_sidebar.close .a-menu-links{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    margin: 5px 0;
+    background-color:#FFFFFF;
+    justify-content: space-between;
+    border-right: 1px solid rgba(0, 0, 0, 0.10);
+
+}
+
+.a-menu-containers{
+    height: 100%;
+    display: flex;
+}
+.a_sidebar.close .dashboard-txt,
+.a_sidebar.close .records-txt,
+.a_sidebar.close .announcements-txt,
+.a_sidebar.close .settings-txt,
+.a_sidebar.close .admin-details, 
+.a_sidebar.close .student-txt,
+.a_sidebar.close .staff-txt,
+.a_sidebar.close .attendance-txt
+{
+    transition-delay: 0s;
+    display:none;
+    pointer-events: none;
+}
+
+.a_sidebar .dashboard-txt,
+.a_sidebar .records-txt,
+.a_sidebar .announcements-txt,
+.a_sidebar .settings-txt,
+.a_sidebar .admin-details,
+.a_sidebar .student-txt,
+.a_sidebar .staff-txt,
+.a_sidebar.close .attendance-txt {
+    font-family: "Roboto-Bold";
+    font-size: 16px;
+    color: #404040;
+    transition: opacity 0.3s ease; /* Add transition property */
+}
+
+/*dashboard icon container*/
+.a_sidebar .a-dashboard li{
+    margin: -10px;
+}
+
+.a_sidebar .dashboard-click{
+    display:flex;
+    align-items: center;
+    width: 240px;
+}
+
+.a_sidebar .dashboard-click i{
+    width:80px;
+}
+
+
+.a_sidebar .bxs-dashboard{
+    color: #404040;
+    font-size: 28px;
+}
+
+.a_sidebar .dashboard-txt{
+    font-family: "Roboto-Bold";
+    font-size: 16px;
+    color:#404040;
+}
+
+.a_sidebar.close .dashboard-txt{
+    transition-delay: 0s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/*records container*/
+
+.a_sidebar .records-click{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a_sidebar .records-click i{
+    width: 80px;
+    color: #404040;
+    font-size: 28px;
+}
+
+.a_sidebar .records-txt{
+    font-family: "Roboto-Bold";
+    font-size: 16px;
+    color:#404040;
+}
+
+.a_sidebar.close .records-txt{
+    transition-delay: 0s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Initially, when the dropdown is not open */
+.a_sidebar .a-menu-container .a-menu span .arrow .bxs-chevron-down {
+    color: #404040;
+    font-size: 22px;
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Add transform transition */
+  }
+  
+  /* When the dropdown is open (down class is applied) */
+  .a_sidebar .a-menu-container .a-menu span .arrow.down .bxs-chevron-down {
+    color: #404040;
+    font-size: 22px;
+    transform: rotate(-180deg);
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Add transform transition */
+  }
+  
+
+.a_sidebar.close .a-menu-container .a-menu .bxs-chevron-down{
+    display: none;
+    transition: opacity 0.5s ease;
+
+}
+
+
+.a_sidebar .rec-dd-menu .open{
+    transition: opacity 0.5s ease, transform 0.5s ease
+}
+
+.a_sidebar.close .rec-dd-menu .open li{
+    display: none;
+}
+.a_sidebar .rec-dd-menu .open li{
+    height: 35px;
+    margin-top:5px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-family: "Roboto-Bold";
+    font-size: 16px;
+    color: #404040;
+    transition: opacity 0.5s ease, transform 0.5s ease
+}
+.a_sidebar .rec-dd-menu .open ul{
+    height: 115px;   
+    transition: height 0.5s ease, transform 0.5s ease
+}
+
+/*records submenu*/
+.a_sidebar ul .a-records-dd{
+    padding: 0px;
+    font-family: "Roboto-Bold";
+    font-size: 16px;
+    color: #404040;
+    transition: opacity 0.5s ease, transform 0.5s ease
+}
+
+.a_sidebar.close ul .a-records-dd{
+    display: none;
+    transition: opacity 0.3s ease, width 0s 0.3s; /* Delay width transition */
+}
+
+
+.a_sidebar .student-txt{
+    margin-left:80px;
+}
+
+.a_sidebar .staff-txt{
+    margin-left:80px;
+}
+
+.a_sidebar .attendance-txt{
+    margin-left:80px;
+}
+
+
+/*announcements container*/
+.a_sidebar .announcements-click{
+    display: flex;
+    align-items: center;
+}
+
+.a_sidebar .announcements-click i{
+    width: 80px;
+    color: #404040;
+    font-size: 28px;
+}
+
+.a_sidebar .announcements-txt{
+    font-family: "Roboto-Bold";
+    font-size: 16px;
+    color:#404040;
+}
+
+.a_sidebar.close .announcements-txt{
+    transition-delay: 0s;
+    opacity: 0;
+    pointer-events: none;
+}
+/* settings container */
+
+.a_sidebar .settings-click{
+    display: flex;
+    align-items: center;
+
+    margin:10px 0;
+    bottom: 61px;
+    height: 50px;
+    width:240px;
+
+}
+
+.a_sidebar .settings-click:hover{
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+.a_sidebar .settings-click i{
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    color: #404040;
+    font-size: 28px;
+}
+
+.a_sidebar .settings-txt{
+    font-family: "Roboto-Bold";
+    font-size: 16px;
+    color:#404040;
+}
+
+.a_sidebar.close .settings-txt{
+    transition-delay: 0s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+/* Admin Profile */
+
+/* Styles for open state */
+.a_sidebar .a-profile {
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    width: 240px;
+    height: 30px;
+    padding: 15px 0;
+    background-color: #F5F5F5;
+    border-top: 1px solid rgba(0, 0, 0, 0.10);
+    transition: width 0.1s ease;
+}
+
+.a_sidebar.close .a-profile {
+    display: flex;
+
+    align-items: center;
+    bottom: 0;
+    width: 80px;
+    height: 30px;
+    padding: 15px 0;
+    background-color: #F5F5F5;
+    border-top: 1px solid rgba(0, 0, 0, 0.10);
+    overflow: hidden;
+    transition: width 0.1s ease;
+}
+
+/* Center the admin logo when closed */
+.a_sidebar .a-profile .admin-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    transition: opacity 0.1s ease; /* Add opacity transition */
+}
+
+.a_sidebar.close .a-profile .admin-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    transition: opacity 0.1s ease, width 0s 0.3s; /* Delay width transition */
+}
+
+.a_sidebar .admin-cont .admin-logo {
+    width: 40px;
+    transition: opacity 0.3s ease; /* Add opacity transition */
+}
+
+/* Styles for admin details */
+.a_sidebar .a-details {
+    color: #404040;
+    max-width: 160px; /* Adjust this value to your desired width */
+    opacity: 1;
+    transition: opacity 0.3s ease; /* Transition for opacity */
+    transition-delay: 0.3s ;
+}
+
+.a_sidebar.close .a-details {
+    opacity: 0;
+    max-width: 0; /* Change max-width to 0 */
+    transition: 0 ease-out; /* Transition for opacity */
+
+}
+
+.a_sidebar .a-details .admin-name {
+    font-family: "Roboto-Bold";
+    font-size: 16px;
+    transition: opacity 0.3s ease; /* Transition for opacity */
+    transition-delay: 0.3s ;
+}
+
+.a_sidebar.close .a-details .admin-name {
+    opacity: 0;
+    width:0px;
+    transition: 0 ease-out; /* Transition for opacity */
+    display:none;
+}
+
+.a_sidebar .a-details .admin-accno {
+    font-family: "Roboto-Light";
+    font-size: 10px;
+    margin-top: -3px;
+    transition: opacity 0.3s ease;
+    transition-delay: 0.3s ;
+}
+
+.a_sidebar.close .a-details .admin-accno {
+    max-width: 0; /* Change max-width to 0 */
+    transition: 0 ease-out; /* Transition for opacity */
+    display: none;
+    width:0px;
+}
+    
+

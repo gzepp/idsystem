@@ -1,0 +1,551 @@
+/* Locally Imported Fonts */
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../../../components/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../../../components/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: medium;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../../../components/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'SSPro-Bold';
+    src: url('../../../components/fonts/source-sans-pro/SourceSansPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
+
+/* Main Container */
+.admin-annolist-container{
+    max-height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+}
+
+.admin-annolist-contents{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding: 20px;
+}
+
+.annolist-post-container-body{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    width:100%;
+    overflow-y: auto;
+    
+}
+
+.annolist-post-main-container{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+/* Admin Announcement List Post Header */
+.annolist-post-header{
+    display: flex;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 5px;
+    border: 1px solid #00000033;
+    
+}
+
+.annolist-poster-name-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding:25px 25px;
+}
+
+.annolist-user-pic{
+    padding-right: 10px;
+}
+
+.annolist-user-pic img{
+    width:50px;
+}
+
+.linking-page-anno{
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+}
+
+.annolist-post-click-container{
+    display: flex;
+    width: 100%;
+}
+
+.annolist-post-click{
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+    color: #ABA7A7;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #00000033;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+/* Admin Announcement List Container */
+.annolist-lists-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffff;
+    border-radius: 5px;
+    overflow-x: hidden;
+    height: auto;
+}
+
+/* Admin Announcement Card */
+
+.annolist-card-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top:10px;
+}
+
+.annoItem-linking-page{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.annolist-card{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #00000033;
+    border-radius: 5px;
+    padding: 20px; 
+    height: 180px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s; /* Add transitions for smooth effects */
+}
+
+.annolist-card:hover {
+  background-color: #f0f0f0;
+}
+
+.annolist-card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+    width: 425px;
+    height: 180px;
+    overflow: hidden;
+}
+
+.annolist-card-img img{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 350px;
+    height:auto;
+    border-radius: 5px;
+}
+
+/* Triangle on Image */
+.annolist-card-img::before { 
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-radius: 0px 5px;
+    border-left: 130px solid transparent; 
+    border-top: 130px solid #47B8B2; 
+    opacity: 80%;
+    z-index: 20;
+}
+
+.annolist-card-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 5px 0px 25px;
+    margin:5px 0px;
+    height: 180px;
+    width:100%;
+    overflow: hidden;
+}
+
+.annolist-news-title{
+    display: flex;
+    justify-content: flex-start;
+    font-family: "SSPro-Bold";
+    font-size: 22px;
+    color:#181818;
+    width: 100%;
+}
+
+.annolist-news-details {
+
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    text-align: justify;
+    color: #6C6C6C;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 7; /* Adjust the number of lines you want to display */
+    -webkit-box-orient: vertical;
+    margin: 5px 0px;
+    height: 120px;
+    width: 100%;
+}
+
+.annolist-category-date{
+    display: flex;
+    align-items: center;
+}
+
+.annolist-category-indicator{
+    font-family: "Roboto-Medium";
+    font-size: 12px;
+    color: #f0f0f0;
+    background-color: #0D716F;
+    padding: 3px 15px;
+    border-radius: 10px;
+    margin-right:5px;
+}
+
+.annolist-date-indicator{
+    font-family: "Roboto-Medium";
+    font-size: 12px;
+    color: #f0f0f0;
+    background-color: #FFD163;
+    padding: 3px 15px;
+    border-radius: 10px;
+
+}
+
+/* Anno Settings DD */
+
+.annolistcard-dd-header{
+    display: flex;
+    height: 20px;
+    width:10px;
+}
+
+.annolistcard-post-btn-cont{
+    display:flex;
+}
+
+.annolist-post-settings-btn{
+    display: flex;
+}
+
+.annolist-post-settings-btn i{
+    font-size: 22px;
+    color: #404040;
+}
+
+
+/* Anno Post Header */
+.anno-post-btn-cont {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .anno-post-settings-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 20px;
+    color: #404040;
+    font-size: 26px;
+    position: relative; /* Add this to establish a positioning context */
+  }
+  
+  .anno-post-settings-btn i:hover {
+    cursor: pointer;
+  }
+  
+  .annolist-post-options {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 20px; 
+    color: white;
+    font-family: "Roboto-Medium";
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1120;
+    width: 130px;
+    opacity: 1; 
+    transform: translateY(-10px);
+
+  }
+  
+  .announcementData-linking-page {
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+  }
+  
+  .anno-edit-btn {
+    padding: 10px;
+    background-color: #47B8B2;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .anno-edit-btn i {
+    margin-right: 10px;
+  }
+  
+  .anno-edit-btn:hover {
+    cursor: pointer;
+    background-color: #4ad6cf;
+  }
+  
+  .anno-del-btn {
+    padding: 10px;
+    background-color: #BC4949;
+    border-radius: 0px 0px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .anno-del-btn i {
+    margin-right: 10px;
+  }
+  
+  .anno-del-btn:hover {
+    cursor: pointer;
+    background-color: #df4747;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.annolist-footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin:20px 0px;
+}
+.page-next-prev-btn-container{
+    display:flex;
+    align-items:center ;
+}
+
+.prev-btn{
+    font-size: 14px;
+    font-family: "Roboto-Regular";
+    color: #7C7A7A;
+    padding: 5px 10px;
+}
+
+.prev-btn:hover{
+    font-size: 14px;
+    font-family: "Roboto-Medium";
+    color: #404040;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.next-btn{
+    font-size: 14px;
+    font-family: "Roboto-Regular";
+    color: #5DCAC4;
+    padding: 5px 20px;
+}
+
+.next-btn:hover{
+    font-size: 14px;
+    font-family: "Roboto-Medium";
+    color: #3fccc5;
+    padding: 5px 20px;
+    cursor:pointer;
+}
+
+.page-num-indicator{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.page-num-indicator-txt{
+    font-size: 14px;
+    font-family: "Roboto-Regular";
+    color: #404040;
+    padding: 5px 10px;
+}
+
+.page-indicator-main{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #00000033;
+    padding: 5px ;
+    border-radius: 5px;
+}
+
+.shaded-num-indicator-cont{
+    font-size: 14px;
+    font-family: "Roboto-Regular";
+    color: #404040;
+    padding: 5px 0px;
+    
+
+}
+
+.num-indicator-cont-1{
+    font-size: 14px;
+    font-family: "Roboto-Regular";
+    color: #404040;
+    padding: 5px 10px;
+    border-right: 1px solid #00000033;
+}
+
+.num-indicator-cont-2{
+    font-size: 14px;
+    font-family: "Roboto-Regular";
+    color: #404040;
+    padding: 5px 10px;
+    border-left: 1px solid #00000033;
+}
+
+
+
+  /* Delete Popup */
+  .anno-del-modal{
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.del-modal-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1002;
+    border-radius: 5px;
+    border: none;
+    height: auto;
+}
+
+.del-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 20px 10px 20px;
+}
+
+.del-icon{
+    color: #BC4949;
+    font-size: 36px;
+}
+
+.del-title{
+    font-family: "Roboto-Medium";
+    color: #181818;
+    font-size:18px;
+}
+
+.del-selection-container{
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto-Regular";
+    width:100%;
+    height: auto;
+    border-radius: 0px 0px 5px 5px;
+    font-size: 12px;
+}
+
+.confirm-del-btn{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #BC4949;
+    width:100%;
+    padding:10px;
+    border-radius: 0px 0px 0px 5px;
+}
+
+.confirm-del-btn:hover{
+    cursor:pointer;
+    background-color: #df4747;
+    font-family: "Roboto-Medium";
+
+}
+
+.cancel-del-btn{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #404040;
+    width:100%;
+    padding:10px;
+    border-radius: 0px 0px 5px 0px;
+}
+
+.cancel-del-btn:hover{
+    cursor:pointer;
+    background-color: #47B8B2;
+    font-family: "Roboto-Medium";
+
+}
+
+.anno-search-container{
+    display: flex;
+    justify-content: center;
+    width:350px;
+}
